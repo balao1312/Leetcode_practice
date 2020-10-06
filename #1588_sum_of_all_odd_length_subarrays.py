@@ -5,6 +5,6 @@ class Solution:
             for index in range(len(arr)):
                 sub_array = arr[index:index + interval]
                 if len(sub_array) != interval:
-                    continue
+                    break
                 total += sum(sub_array)
         return total
